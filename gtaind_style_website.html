@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>GTAind Clone — Hacker Green</title>
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            color: #00ff00;
+            font-family: "Courier New", monospace;
+        }
+        header {
+            background: #001900;
+            padding: 15px;
+            border-bottom: 2px solid #00ff00;
+        }
+        .menu {
+            padding: 10px;
+            border-right: 2px solid #00ff00;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            overflow-y: auto;
+            background: #000;
+        }
+        .menu h3 {
+            margin-top: 0;
+        }
+        .menu a {
+            display: block;
+            color: #00ff00;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+        .menu a:hover {
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .mod-item {
+            border-bottom: 1px solid #00ff00;
+            padding: 10px 0;
+        }
+        .mod-item h4 {
+            margin: 0;
+        }
+        .upload-box {
+            border: 1px solid #00ff00;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        button {
+            background: #001900;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        button:hover {
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .login-box {
+            border: 1px solid #00ff00;
+            padding: 20px;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu">
+    <h3>Menu</h3>
+    <a href="#mods">MOD List</a>
+    <a href="#kategori">Kategori MOD</a>
+    <a href="#fixaudio">Fix Audio GTA SA</a>
+    <a href="#extreme">GTA Extreme Updates</a>
+    <a href="#faq">FAQ and About</a>
+    <a href="#tutorial">Tutorial</a>
+    <a href="#buatmod">Membuat MOD</a>
+    <a href="#pasangmod">Memasang MOD</a>
+    <a href="#extremeuse">Memakai GTA Extreme</a>
+    <a href="#modtools">MOD Tools</a>
+    <a href="#populer">MOD Populer</a>
+    <a href="#legendary">Legendary</a>
+    <a href="#upload">Upload MOD</a>
+    <a href="#feeds">GTAind Feeds</a>
+</div>
+
+<div class="content">
+    <h2>Website ini dalam arsip</h2>
+    <p>Tidak akan ada update lagi, upload mod baru bisa ke gtainside.com.</p>
+
+    <h3 id="mods">MOD Populer</h3>
+
+    <div class="mod-item">
+        <h4>Lamborghini Centeno</h4>
+        <p>Author: Gtaall | Uploaded by: Stevian15</p>
+        <button>Lihat Selengkapnya »</button>
+        <p>29 komentar</p>
+    </div>
+
+    <div class="mod-item">
+        <h4>Perang Dunia Besar (DYOM)</h4>
+        <p>Author: P118 Real Youtube | Uploaded by: P118 Real Youtube</p>
+        <button>Lihat Selengkapnya »</button>
+        <p>38 komentar</p>
+    </div>
+
+    <!-- Kamu bisa lanjut isi mod lain di sini -->
+
+    <h3 id="upload">Upload MOD</h3>
+    <div class="upload-box">
+        <h4>Upload Mod GTA San Andreas</h4>
+        <p>Login dulu untuk upload MOD.</p>
+        <button onclick="document.getElementById('loginBox').style.display='block'">Login</button>
+    </div>
+
+    <div id="loginBox" class="login-box" style="display:none; margin-top:10px;">
+        <h3>Login untuk Upload</h3>
+        <label>Username:</label><br>
+        <input type="text"><br><br>
+        <label>Password:</label><br>
+        <input type="password"><br><br>
+        <button>Login</button>
+    </div>
+</div>
+
+</body>
+</html>
